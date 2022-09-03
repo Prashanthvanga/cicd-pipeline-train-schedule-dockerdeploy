@@ -20,6 +20,7 @@ pipeline {
                     app = docker.build("prashanthvanga/train-schedule")
                     app.inside {
                         sh 'echo $(curl localhost:8080)'
+                       echo 'Build Docker Image'
                     }
                 }
             }
