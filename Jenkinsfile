@@ -20,7 +20,7 @@ pipeline {
                     app = docker.build("prashanthvanga/train-schedule")
                     app.inside {
                         echo "Tests passed"
-                        sh 'echo $(curl localhost:8080)'
+                       
                     }
                 }
             }
